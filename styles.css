@@ -389,7 +389,7 @@ p {
 }
 
 .cover-showcase {
-  margin-block-end: 1.25rem;
+  margin: 0 0 1.75rem 0;
   border-radius: var(--radius-md);
   border: 1px solid var(--border-subtle);
   overflow: hidden;
