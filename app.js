@@ -107,14 +107,16 @@ for (const panel of archPanels) {
 
 // Interactive Project Scope & Budget Estimator
 const TRACK_DATA = {
-  website: { label: "Business Website / Booking Site", minPhp: 15000, maxPhp: 35000, baseWeeks: 2, stack: "Static/Next.js · SEO · Messenger/Forms" },
-  app: { label: "Custom Web or Mobile App", minPhp: 45000, maxPhp: 95000, baseWeeks: 4, stack: "TypeScript · React · REST/PostgreSQL" },
+  starter: { label: "Starter MSME Website (₱500 Promo)", minPhp: 500, maxPhp: 3500, baseWeeks: 0.7, stack: "Mobile-Friendly Site · Free Address · Fast Setup" },
+  website: { label: "Custom Company Website / Booking Portal", minPhp: 15000, maxPhp: 35000, baseWeeks: 2, stack: "Static/Next.js · SEO · Messenger/Booking" },
+  app: { label: "Custom Web, Mobile App or AI Tool", minPhp: 45000, maxPhp: 95000, baseWeeks: 4, stack: "TypeScript · React · REST/PostgreSQL · AI" },
   erp: { label: "Full Business System / ERP / POS", minPhp: 65000, maxPhp: 150000, baseWeeks: 6, stack: ".NET / Node · Role-Based API · Postgres" },
   iot: { label: "IoT Hardware + Live Web Dashboard", minPhp: 55000, maxPhp: 135000, baseWeeks: 5, stack: "ESP32 / RFID / MQTT · Live Web Telemetry" }
 };
 
 const FEATURE_DELTAS = {
   rbac: { label: "Role-based staff access & audit logs", php: 10000, weeks: 1 },
+  ai: { label: "AI workflow automation & smart assistant", php: 15000, weeks: 1 },
   payments: { label: "Online payments & e-invoicing", php: 12000, weeks: 1 },
   alerts: { label: "Automated SMS, Email, or Messenger alerts", php: 8000, weeks: 0.5 },
   hardware: { label: "RFID, QR, barcode, or sensor integration", php: 18000, weeks: 1.5 },
@@ -136,6 +138,10 @@ const estStackEl = document.getElementById("est-stack");
 const briefOutEl = document.getElementById("brief-preview");
 const copyBtn = document.getElementById("copy-brief");
 const copyStatusEl = document.getElementById("copy-status");
+
+function roundBudget(val) {
+  return val < 5000 ? Math.max(500, Math.round(val / 500) * 500) : Math.round(val / 1000) * 1000;
+}
 
 function updateEstimate() {
   if (!scopeForm) return;
@@ -161,13 +167,14 @@ function updateEstimate() {
     }
   }
 
-  const minTotal = Math.round((track.minPhp + modPhp) * scale.mult / 1000) * 1000;
-  const maxTotal = Math.round((track.maxPhp + modPhp) * scale.mult / 1000) * 1000;
-  const weeksLow = Math.max(2, Math.round(track.baseWeeks + modWeeks + scale.weeks));
+  const minTotal = roundBudget((track.minPhp + modPhp) * (trackKey === "starter" && modPhp === 0 ? 1 : scale.mult));
+  const maxTotal = roundBudget((track.maxPhp + modPhp) * scale.mult);
+  const totalWeeks = track.baseWeeks + modWeeks + (trackKey === "starter" && modPhp === 0 ? 0 : scale.weeks);
+  const weeksLow = Math.max(1, Math.round(totalWeeks));
   const weeksHigh = weeksLow + 2;
 
   estBudgetEl.textContent = "₱" + minTotal.toLocaleString("en-US") + " – ₱" + maxTotal.toLocaleString("en-US");
-  estTimelineEl.textContent = weeksLow + "–" + weeksHigh + " weeks MVP";
+  estTimelineEl.textContent = totalWeeks < 1.2 ? "3–7 days launch" : weeksLow + "–" + weeksHigh + " weeks MVP";
   estStackEl.textContent = track.stack;
 
   const lines = [

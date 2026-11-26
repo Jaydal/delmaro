@@ -1,22 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&family=Syne:wght@600;700;800&display=swap");
 
 :root {
-  --bg-deep: #070D1B;
-  --bg-surface: #0D162B;
-  --bg-elevated: #14223E;
-  --bg-inset: #091122;
-  --cobalt: #1D4ED8;
-  --cobalt-hover: #1E40AF;
-  --cobalt-bright: #3B82F6;
+  --bg-deep: #000818;
+  --bg-surface: #061229;
+  --bg-elevated: #0D1E3F;
+  --bg-inset: #030A18;
+  --cobalt: #0141E9;
+  --cobalt-hover: #083CA2;
+  --cobalt-bright: #0068F8;
   --sky: #38BDF8;
   --emerald: #10B981;
   --rose: #FB7185;
   --text-primary: #F8FAFC;
-  --text-secondary: #C8D7EE;
+  --text-secondary: #CBD9EE;
   --text-muted: #93B0D8;
   --border-subtle: rgba(147, 176, 216, 0.22);
-  --border-strong: rgba(59, 130, 246, 0.56);
-  --shadow-elevated: 0 18px 42px rgba(2, 6, 18, 0.45);
+  --border-strong: rgba(0, 104, 248, 0.58);
+  --shadow-elevated: 0 18px 42px rgba(0, 4, 14, 0.55);
   --radius-sm: 8px;
   --radius-md: 12px;
   --radius-lg: 16px;
@@ -96,7 +96,7 @@ input, select, textarea {
   position: sticky;
   inset-block-start: 0;
   z-index: 40;
-  background-color: rgba(7, 13, 27, 0.92);
+  background-color: rgba(0, 8, 24, 0.92);
   backdrop-filter: blur(10px);
   border-block-end: 1px solid var(--border-subtle);
 }
@@ -372,6 +372,34 @@ p {
 .hero-lead {
   font-size: 1.08rem;
   color: var(--text-secondary);
+}
+
+.brand-pillars {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--sky);
+  text-transform: uppercase;
+  margin-block-end: 0.75rem;
+}
+
+.brand-pillars .brand-accent {
+  color: #60A5FA;
+}
+
+.cover-showcase {
+  margin-block-end: 1.25rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+  overflow: hidden;
+  background-color: var(--bg-deep);
+}
+
+.cover-showcase img {
+  display: block;
+  inline-size: 100%;
+  block-size: auto;
 }
 
 .guarantee-strip {
