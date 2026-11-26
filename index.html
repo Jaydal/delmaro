@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DELMARO — Custom Systems, Web &amp; Mobile Apps, Websites &amp; IoT Solutions</title>
+  <meta name="description" content="DELMARO builds custom business systems, ERPs, web and mobile apps, high-conversion websites, and IoT hardware dashboards for growing Philippine companies.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23070D1B'/%3E%3Ccircle cx='32' cy='32' r='17' fill='none' stroke='%232563EB' stroke-width='7'/%3E%3Cpath d='M32 15a17 17 0 0 1 17 17' fill='none' stroke='%2338BDF8' stroke-width='7' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo" href="#top" aria-current="page">
+        <svg width="28" height="28" viewBox="0 0 36 36" aria-hidden="true">
+          <rect width="36" height="36" rx="9" fill="#0D162B" stroke="#2563EB" stroke-width="2"/>
+          <circle cx="18" cy="18" r="9" fill="none" stroke="#3B82F6" stroke-width="3.2"/>
+          <path d="M18 9 A9 9 0 0 1 27 18" fill="none" stroke="#38BDF8" stroke-width="3.2" stroke-linecap="round"/>
+        </svg>
+        <span>DELMARO</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary">
+        <button
+          class="menu-button"
+          type="button"
+          popovertarget="site-menu"
+          popovertargetaction="toggle"
+          aria-controls="site-menu"
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <line x1="4" y1="7" x2="20" y2="7"/>
+            <line x1="4" y1="12" x2="20" y2="12"/>
+            <line x1="4" y1="17" x2="20" y2="17"/>
+          </svg>
+          <span>Menu</span>
+        </button>
+
+        <ul id="site-menu" class="site-menu" popover="auto">
+          <li><a href="#capabilities">Capabilities</a></li>
+          <li><a href="#architecture">Solutions</a></li>
+          <li><a href="#estimator">Scope Estimator</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a class="nav-cta" href="https://m.me/61593170787462" target="_blank" rel="noopener">Start a Project</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" class="container">
+    <section aria-labelledby="hero-heading">
+      <div class="hero-grid">
+        <div>
+          <h1 id="hero-heading">Custom software, web apps, and IoT systems built around how your business actually runs.</h1>
+          <p class="hero-lead">Stop forcing multi-branch inventory, client bookings, payroll cutoffs, or field sensors into fragile spreadsheets and chat threads. DELMARO engineers production software, web platforms, and connected hardware workflows from the Philippines.</p>
+
+          <div class="actions-row">
+            <a class="btn-primary" href="https://m.me/61593170787462" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+              </svg>
+              <span>Message delmaro.tech</span>
+            </a>
+            <a class="btn-secondary" href="#estimator">Estimate Scope &amp; Timeline</a>
+          </div>
+
+          <ul class="guarantee-strip">
+            <li>
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Full source code &amp; data ownership</span>
+            </li>
+            <li>
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>48-hour clickable scope prototype</span>
+            </li>
+            <li>
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Web, Mobile, Systems &amp; Hardware</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="workbench">
+          <div class="tablist" focusgroup="tablist nomemory" role="tablist" aria-label="System topology views">
+            <button type="button" role="tab" id="tab-erp" aria-selected="true" focusgroupstart>Operations &amp; ERP</button>
+            <button type="button" role="tab" id="tab-apps" aria-selected="false">Web &amp; Mobile Apps</button>
+            <button type="button" role="tab" id="tab-iot" aria-selected="false">IoT &amp; Sensors</button>
+          </div>
+
+          <div role="tabpanel" aria-labelledby="tab-erp" tabindex="0">
+            <div class="blueprint-panel">
+              <div class="blueprint-svg-wrap">
+                <svg viewBox="0 0 540 210" aria-label="Operations and ERP data flow diagram">
+                  <line x1="150" y1="105" x2="205" y2="105" stroke="#3B82F6" stroke-width="2" stroke-dasharray="5 4"/>
+                  <line x1="335" y1="105" x2="390" y2="105" stroke="#10B981" stroke-width="2" stroke-dasharray="5 4"/>
+                  <rect x="16" y="54" width="134" height="102" rx="10" fill="#0D162B" stroke="#3B82F6" stroke-width="1.5"/>
+                  <text x="83" y="92" text-anchor="middle" fill="#F8FAFC" font-size="13" font-weight="700" font-family="Syne, sans-serif">Branch &amp; POS</text>
+                  <text x="83" y="114" text-anchor="middle" fill="#C8D7EE" font-size="11" font-family="JetBrains Mono, monospace">Barcode / Order</text>
+                  <text x="83" y="132" text-anchor="middle" fill="#93B0D8" font-size="11" font-family="JetBrains Mono, monospace">Intake</text>
+                  <rect x="205" y="40" width="130" height="130" rx="12" fill="#14223E" stroke="#38BDF8" stroke-width="1.75"/>
+                  <text x="270" y="86" text-anchor="middle" fill="#38BDF8" font-size="13" font-weight="700" font-family="Syne, sans-serif">Core Rules Engine</text>
+                  <text x="270" y="108" text-anchor="middle" fill="#F8FAFC" font-size="11" font-family="JetBrains Mono, monospace">RBAC + Audit Log</text>
+                  <text x="270" y="128" text-anchor="middle" fill="#C8D7EE" font-size="11" font-family="JetBrains Mono, monospace">Auto Ledger Sync</text>
+                  <rect x="390" y="54" width="134" height="102" rx="10" fill="#0D162B" stroke="#10B981" stroke-width="1.5"/>
+                  <text x="457" y="92" text-anchor="middle" fill="#10B981" font-size="13" font-weight="700" font-family="Syne, sans-serif">Live Control</text>
+                  <text x="457" y="114" text-anchor="middle" fill="#C8D7EE" font-size="11" font-family="JetBrains Mono, monospace">Zero-Drift Stock</text>
+                  <text x="457" y="132" text-anchor="middle" fill="#93B0D8" font-size="11" font-family="JetBrains Mono, monospace">&amp; Payroll Export</text>
+                </svg>
+              </div>
+              <div class="spec-row">
+                <span>Replaces fragmented Google Sheets &amp; Viber order threads with one auditable source of truth.</span>
+                <span class="spec-metric">4–6 wks MVP</span>
+              </div>
+            </div>
+          </div>
+
+          <div role="tabpanel" aria-labelledby="tab-apps" hidden="until-found">
+            <div class="blueprint-panel">
+              <div class="blueprint-svg-wrap">
+                <svg viewBox="0 0 540 210" aria-label="Web and Mobile App booking and portal topology">
+                  <line x1="150" y1="105" x2="205" y2="105" stroke="#3B82F6" stroke-width="2" stroke-dasharray="5 4"/>
+                  <line x1="335" y1="105" x2="390" y2="105" stroke="#10B981" stroke-width="2" stroke-dasharray="5 4"/>
+                  <rect x="16" y="54" width="134" height="102" rx="10" fill="#0D162B" stroke="#3B82F6" stroke-width="1.5"/>
+                  <text x="83" y="92" text-anchor="middle" fill="#F8FAFC" font-size="13" font-weight="700" font-family="Syne, sans-serif">Client Portal</text>
+                  <text x="83" y="114" text-anchor="middle" fill="#C8D7EE" font-size="11" font-family="JetBrains Mono, monospace">24/7 Self-Book</text>
+                  <text x="83" y="132" text-anchor="middle" fill="#93B0D8" font-size="11" font-family="JetBrains Mono, monospace">&amp; Google SEO</text>
+                  <rect x="205" y="40" width="130" height="130" rx="12" fill="#14223E" stroke="#38BDF8" stroke-width="1.75"/>
+                  <text x="270" y="86" text-anchor="middle" fill="#38BDF8" font-size="13" font-weight="700" font-family="Syne, sans-serif">Payment &amp; Queue</text>
+                  <text x="270" y="108" text-anchor="middle" fill="#F8FAFC" font-size="11" font-family="JetBrains Mono, monospace">Webhook Verify</text>
+                  <text x="270" y="128" text-anchor="middle" fill="#C8D7EE" font-size="11" font-family="JetBrains Mono, monospace">Calendar Lock</text>
+                  <rect x="390" y="54" width="134" height="102" rx="10" fill="#0D162B" stroke="#10B981" stroke-width="1.5"/>
+                  <text x="457" y="92" text-anchor="middle" fill="#10B981" font-size="13" font-weight="700" font-family="Syne, sans-serif">Staff Console</text>
+                  <text x="457" y="114" text-anchor="middle" fill="#C8D7EE" font-size="11" font-family="JetBrains Mono, monospace">SMS/Email Alerts</text>
+                  <text x="457" y="132" text-anchor="middle" fill="#93B0D8" font-size="11" font-family="JetBrains Mono, monospace">&amp; Status Tracker</text>
+                </svg>
+              </div>
+              <div class="spec-row">
+                <span>Converts visitors around the clock with automatic slot confirmation and payment tracking.</span>
+                <span class="spec-metric">2–5 wks MVP</span>
+              </div>
+            </div>
+          </div>
+
+          <div role="tabpanel" aria-labelledby="tab-iot" hidden="until-found">
+            <div class="blueprint-panel">
+              <div class="blueprint-svg-wrap">
+                <svg viewBox="0 0 540 210" aria-label="IoT sensors and hardware gateway topology">
+                  <line x1="150" y1="105" x2="205" y2="105" stroke="#3B82F6" stroke-width="2" stroke-dasharray="5 4"/>
+                  <line x1="335" y1="105" x2="390" y2="105" stroke="#10B981" stroke-width="2" stroke-dasharray="5 4"/>
+                  <rect x="16" y="54" width="134" height="102" rx="10" fill="#0D162B" stroke="#3B82F6" stroke-width="1.5"/>
+                  <text x="83" y="92" text-anchor="middle" fill="#F8FAFC" font-size="13" font-weight="700" font-family="Syne, sans-serif">Field Hardware</text>
+                  <text x="83" y="114" text-anchor="middle" fill="#C8D7EE" font-size="11" font-family="JetBrains Mono, monospace">RFID / Temp</text>
+                  <text x="83" y="132" text-anchor="middle" fill="#93B0D8" font-size="11" font-family="JetBrains Mono, monospace">Power / Gate IO</text>
+                  <rect x="205" y="40" width="130" height="130" rx="12" fill="#14223E" stroke="#38BDF8" stroke-width="1.75"/>
+                  <text x="270" y="86" text-anchor="middle" fill="#38BDF8" font-size="13" font-weight="700" font-family="Syne, sans-serif">MQTT Gateway</text>
+                  <text x="270" y="108" text-anchor="middle" fill="#F8FAFC" font-size="11" font-family="JetBrains Mono, monospace">Offline Buffer</text>
+                  <text x="270" y="128" text-anchor="middle" fill="#C8D7EE" font-size="11" font-family="JetBrains Mono, monospace">Threshold Rules</text>
+                  <rect x="390" y="54" width="134" height="102" rx="10" fill="#0D162B" stroke="#10B981" stroke-width="1.5"/>
+                  <text x="457" y="92" text-anchor="middle" fill="#10B981" font-size="13" font-weight="700" font-family="Syne, sans-serif">Cloud Dashboard</text>
+                  <text x="457" y="114" text-anchor="middle" fill="#C8D7EE" font-size="11" font-family="JetBrains Mono, monospace">Realtime Alerts</text>
+                  <text x="457" y="132" text-anchor="middle" fill="#93B0D8" font-size="11" font-family="JetBrains Mono, monospace">&amp; Uptime Logs</text>
+                </svg>
+              </div>
+              <div class="spec-row">
+                <span>Bridges physical sensors, RFID scanners, and smart relays directly to a browser control room.</span>
+                <span class="spec-metric">5–8 wks MVP</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="capabilities" aria-labelledby="capabilities-heading">
+      <h2 id="capabilities-heading">Engineering Capabilities</h2>
+      <p>Every engagement ships production-ready architecture tailored to your workflow—never bloated off-the-shelf templates you outgrow in six months.</p>
+
+      <div class="ledger">
+        <div class="ledger-row">
+          <div class="ledger-title">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/>
+            </svg>
+            <h3>Business Systems &amp; ERP</h3>
+          </div>
+          <p class="ledger-desc">Custom inventory control, multi-branch POS sync, billing ledgers, approval chains, HR/payroll computation, and auditable reporting built for Filipino operations.</p>
+          <div class="stack-tags">
+            <span class="stack-pill">.NET / Node</span>
+            <span class="stack-pill">PostgreSQL</span>
+            <span class="stack-pill">RBAC Audit</span>
+          </div>
+        </div>
+
+        <div class="ledger-row">
+          <div class="ledger-title">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+            </svg>
+            <h3>Web &amp; Mobile Apps</h3>
+          </div>
+          <p class="ledger-desc">Client self-service portals, appointment and queue engines, rider/field dispatch consoles, and workflow automation with payment gateway webhooks.</p>
+          <div class="stack-tags">
+            <span class="stack-pill">TypeScript</span>
+            <span class="stack-pill">React / Next.js</span>
+            <span class="stack-pill">REST / Webhooks</span>
+          </div>
+        </div>
+
+        <div class="ledger-row">
+          <div class="ledger-title">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            <h3>Company Websites</h3>
+          </div>
+          <p class="ledger-desc">Sub-second static or dynamic business websites engineered for Google search discovery, mobile clarity, trust proof, and qualified lead capture.</p>
+          <div class="stack-tags">
+            <span class="stack-pill">Core Web Vitals</span>
+            <span class="stack-pill">Technical SEO</span>
+            <span class="stack-pill">Zero Lock-In</span>
+          </div>
+        </div>
+
+        <div class="ledger-row">
+          <div class="ledger-title">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/>
+            </svg>
+            <h3>IoT &amp; Smart Hardware</h3>
+          </div>
+          <p class="ledger-desc">End-to-end sensor instrumentation: ESP32/microcontroller firmware, RFID/QR access kiosks, cold-chain temperature alerts, and real-time browser telemetry.</p>
+          <div class="stack-tags">
+            <span class="stack-pill">ESP32 / C++</span>
+            <span class="stack-pill">MQTT / WebSockets</span>
+            <span class="stack-pill">RFID &amp; Relays</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="architecture" aria-labelledby="architecture-heading">
+      <h2 id="architecture-heading">Deployable Solution Blueprints</h2>
+      <p>Proven system architectures ready to customize around your team's permissions, hardware, and reporting rules.</p>
+
+      <div class="blueprint-grid">
+        <article class="case-item">
+          <div class="case-meta">
+            <span>SYSTEMS &amp; ERP</span>
+            <span>MULTI-BRANCH READY</span>
+          </div>
+          <h3>Unified Inventory, POS &amp; Payroll Hub</h3>
+          <p>Eliminates duplicate Excel reconciliation across branches with live stock deductions, barcode receiving, supplier POs, and kinsenas payroll export.</p>
+        </article>
+
+        <article class="case-item">
+          <div class="case-meta">
+            <span>WEB &amp; MOBILE APPS</span>
+            <span>24/7 CONVERSION</span>
+          </div>
+          <h3>Automated Booking &amp; Client Portal</h3>
+          <p>Replaces endless manual DM back-and-forth with live slot availability, instant QR/online payment confirmation, automated reminders, and history logs.</p>
+        </article>
+
+        <article class="case-item">
+          <div class="case-meta">
+            <span>IOT &amp; TELEMETRY</span>
+            <span>HARDWARE TO CLOUD</span>
+          </div>
+          <h3>Cold-Chain, Power &amp; RFID Access Telemetry</h3>
+          <p>Streams live temperature, equipment runtime, and RFID attendance scans from shop-floor microcontrollers straight to instant phone &amp; desktop alerts.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="estimator" aria-labelledby="estimator-heading">
+      <h2 id="estimator-heading">Interactive Project Scope &amp; Budget Estimator</h2>
+      <p>Configure your system track, required modules, and deployment scale to generate a clear PH investment estimate and copy-ready project brief.</p>
+
+      <div class="estimator-grid">
+        <form id="scope-form" class="form-panel" aria-labelledby="estimator-heading">
+          <fieldset>
+            <legend>1. Primary solution track</legend>
+            <div class="choice-stack">
+              <label class="choice-item"><input type="radio" name="track" value="website"><span>Business Website / Booking Site</span></label>
+              <label class="choice-item"><input type="radio" name="track" value="app"><span>Custom Web or Mobile App</span></label>
+              <label class="choice-item"><input type="radio" name="track" value="erp" checked><span>Full Business System / ERP / POS</span></label>
+              <label class="choice-item"><input type="radio" name="track" value="iot"><span>IoT Hardware + Live Web Dashboard</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>2. Required capabilities</legend>
+            <div class="choice-stack">
+              <label class="choice-item"><input type="checkbox" name="features" value="rbac" checked><span>Role-based staff access &amp; audit logs</span></label>
+              <label class="choice-item"><input type="checkbox" name="features" value="payments"><span>Online payments &amp; e-invoicing</span></label>
+              <label class="choice-item"><input type="checkbox" name="features" value="alerts" checked><span>Automated SMS, Email, or Messenger alerts</span></label>
+              <label class="choice-item"><input type="checkbox" name="features" value="hardware"><span>RFID, QR, barcode, or sensor integration</span></label>
+              <label class="choice-item"><input type="checkbox" name="features" value="migration"><span>Spreadsheet / legacy data migration</span></label>
+            </div>
+          </fieldset>
+
+          <div class="range-field">
+            <label for="scale-range">3. Operational scale &amp; branches</label>
+            <input type="range" id="scale-range" min="1" max="4" step="1" value="2">
+            <div class="scale-labels">
+              <span>1 Team</span>
+              <span>Up to 3 Sites</span>
+              <span>4–15 Sites</span>
+              <span>Enterprise</span>
+            </div>
+          </div>
+        </form>
+
+        <div class="estimate-output">
+          <h3>Recommended Build Estimate</h3>
+          <div class="estimate-figures">
+            <div class="figure-cell">
+              <span class="figure-label">Estimated Investment (PH)</span>
+              <span class="price-figure" id="est-budget">₱95,000 – ₱193,000</span>
+            </div>
+            <div class="figure-cell">
+              <span class="figure-label">Target MVP Delivery</span>
+              <span class="price-figure" id="est-timeline">9–11 weeks MVP</span>
+            </div>
+          </div>
+          <p style="margin-block-end: 0.75rem; font-size: 0.9rem;">Primary Stack: <strong id="est-stack" style="color: var(--sky);">.NET / Node · Role-Based API · Postgres</strong></p>
+
+          <div id="brief-preview" class="brief-preview">Loading scope brief...</div>
+
+          <div class="actions-row" style="margin-block: 0;">
+            <button type="button" id="copy-brief" class="btn-secondary">Copy Project Brief</button>
+            <a class="btn-primary" href="https://m.me/61593170787462" target="_blank" rel="noopener">Send Brief on Messenger</a>
+          </div>
+          <p id="copy-status" class="status-note" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" aria-labelledby="faq-heading">
+      <h2 id="faq-heading">Engineering Process &amp; Ownership FAQ</h2>
+      <div class="accordion">
+        <details open>
+          <summary>Do we own the full source code, database, and domain?</summary>
+          <div class="faq-body">Yes. Every custom DELMARO build transfers repository access, database ownership, and deployment documentation directly to you—zero proprietary vendor lock-in.</div>
+        </details>
+        <details>
+          <summary>How do we start if our workflows are still on paper or Excel?</summary>
+          <div class="faq-body">Share screenshots or sample sheets in Messenger. Within 48 hours we map the data model and show a clickable scope plan before full development begins.</div>
+        </details>
+        <details>
+          <summary>Can IoT hardware connect safely even with unstable site Wi-Fi?</summary>
+          <div class="faq-body">Yes. Edge controllers buffer readings locally when Wi-Fi drops and sync encrypted payloads via MQTT or HTTPS automatically once connection restores.</div>
+        </details>
+        <details>
+          <summary>What ongoing support or retainers are available after launch?</summary>
+          <div class="faq-body">We offer optional monthly feature iterations, cloud monitoring, hardware replacement firmware, and staff onboarding as your branch count grows.</div>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container site-footer">
+    <div>
+      <strong style="color: var(--text-primary);">DELMARO</strong> · Open Ideas. Built Into Reality. (Philippines)
+    </div>
+    <div class="footer-links">
+      <a href="https://www.facebook.com/profile.php?id=61593170787462" target="_blank" rel="noopener">Facebook Page (delmaro.tech)</a>
+      <a href="https://m.me/61593170787462" target="_blank" rel="noopener">Direct Messenger</a>
+    </div>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
